@@ -42,7 +42,7 @@
   "author": "CuteWisp <sweatpotato13@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "tslib": "^2.1.0"
+    "tslib": "^2.2.0"
   },
   "volta": {
     "node": "12.18.3",
