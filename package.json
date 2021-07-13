@@ -1,51 +1,69 @@
 {
   "name": "nodejs-typescript-boilerplate",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "nodejs-typescript-boilerplate",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sweatpotato13/nodejs-typescript-boilerplate.git"
   },
-  "lint-staged": {
-    "src/**/!(*.queries).ts": [
-      "yarn prettier",
-      "git add"
-    ]
+  "bugs": {
+    "url": "https://github.com/sweatpotato13/nodejs-typescript-boilerplate/issues"
   },
-  "devDependencies": {
-    "@types/jest": "^26.0.22",
-    "@types/node": "^16.3",
-    "@typescript-eslint/eslint-plugin": "^4.22.0",
-    "@typescript-eslint/parser": "^4.22.0",
-    "eslint-config-prettier": "^8.2.0",
-    "eslint": "^7.24.0",
-    "eslint-plugin-jest": "^24.3.5",
-    "husky": "^6.0.0",
-    "jest": "^26.6.3",
-    "prettier": "^2.2.1",
-    "lint-staged": "^11.0.0",
-    "rimraf": "^3.0.2",
-    "ts-jest": "^26.5.4",
-    "typescript": "^4.2.4",
-    "tsutils": "^3.21.0",
-    "ts-node-dev": "^1.1.6"
-  },
+  "homepage": "https://github.com/sweatpotato13/nodejs-typescript-boilerplate",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "dev": "yarn prettier && ts-node-dev src/main.ts --trace-sync-io",
     "test": "jest",
+    "test:cov": "jest --coverage",
+    "dev": "ts-node-dev --poll --respawn --transpile-only src/main.ts --trace-sync-io",
     "lint": "eslint \"{src,test}/**/*.ts\" --fix",
-    "prettier": "prettier --write --config .prettierrc ./src///*.ts && prettier --write --config .prettierrc ./test///*.ts",
+    "prettier": "prettier --write --config .prettierrc \"{src,test}/**/*.ts\"",
     "build": "tsc",
     "prebuild": "rimraf ./dist"
   },
-  "author": "CuteWisp <sweatpotato13@gmail.com>",
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn prettier && yarn lint && git add ."
+    }
+  },
+  "author": "Cute_Wisp <sweatpotato13@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "tslib": "^2.2.0"
+    "elliptic": "^6.5.4",
+    "jsontokens": "^3.0.0",
+    "object-assign": "^4.1.1",
+    "tweetnacl": "^1.0.3",
+    "uint8arrays": "^2.1.4"
   },
-  "volta": {
-    "node": "12.18.3",
-    "npm": "6.14.5"
+  "devDependencies": {
+    "@types/jest": "26.0.10",
+    "@types/node": "^14.14.37",
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
+    "@typescript-eslint/parser": "^4.6.0",
+    "dot-json": "^1.0.3",
+    "eslint": "^7.12.0",
+    "eslint-config-prettier": "^6.14.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "git-format-staged": "^2.1.0",
+    "husky": "^4.3.0",
+    "jest": "26.4.2",
+    "prettier": "^2.1.2",
+    "rimraf": "^2.6.2",
+    "ts-jest": "26.2.0",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^3.7.4"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/dist/"
+    ]
   }
 }
