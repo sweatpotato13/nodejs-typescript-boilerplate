@@ -31,13 +31,7 @@
   },
   "author": "Cute_Wisp <sweatpotato13@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "elliptic": "^6.5.4",
-    "jsontokens": "^3.0.0",
-    "object-assign": "^4.1.1",
-    "tweetnacl": "^1.0.3",
-    "uint8arrays": "^2.1.4"
-  },
+  "dependencies": { },
   "devDependencies": {
     "@types/jest": "26.0.10",
     "@types/node": "^14.14.37",
