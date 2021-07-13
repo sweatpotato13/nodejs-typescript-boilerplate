@@ -26,13 +26,20 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn prettier && yarn lint && git add ."
+      "pre-commit": "yarn prettier && yarn lint && git add .",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   },
   "author": "Cute_Wisp <sweatpotato13@gmail.com>",
   "license": "MIT",
-  "dependencies": { },
   "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
     "@types/jest": "26.0.10",
     "@types/node": "^14.14.37",
     "@typescript-eslint/eslint-plugin": "^4.6.0",
@@ -45,7 +52,7 @@
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "git-format-staged": "^2.1.0",
-    "husky": "^4.3.0",
+    "husky": "^6.0.0",
     "jest": "26.4.2",
     "prettier": "^2.1.2",
     "rimraf": "^2.6.2",
