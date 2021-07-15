@@ -18,11 +18,17 @@
   "scripts": {
     "test": "jest",
     "test:cov": "jest --coverage",
-    "dev": "ts-node-dev --poll --respawn --transpile-only src/main.ts --trace-sync-io",
+    "start:dev": "ts-node-dev --poll --respawn --transpile-only src/main.ts --trace-sync-io",
+    "start:prod": "ts-node src/index.ts",
     "lint": "eslint \"{src,test}/**/*.ts\" --fix",
     "prettier": "prettier --write --config .prettierrc \"{src,test}/**/*.ts\"",
     "build": "tsc",
-    "prebuild": "rimraf ./dist"
+    "prebuild": "rimraf ./dist",
+    "release": "standard-version",
+    "release:major": "standard-version -- --release-as major",
+    "release:minor": "standard-version -- --release-as minor",
+    "release:patch": "standard-version -- --release-as patch",
+    "release:version": "standard-version -- --release-as"
   },
   "husky": {
     "hooks": {
@@ -56,6 +62,7 @@
     "jest": "26.4.2",
     "prettier": "^2.1.2",
     "rimraf": "^2.6.2",
+    "standard-version": "^9.3.1",
     "ts-jest": "26.2.0",
     "ts-node-dev": "^1.1.6",
     "typescript": "^3.7.4"
