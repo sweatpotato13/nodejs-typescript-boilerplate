@@ -1,6 +1,6 @@
 {
     "name": "nodejs-typescript-boilerplate",
-    "version": "1.0.1",
+    "version": "0.0.1",
     "description": "nodejs-typescript-boilerplate",
     "main": "./dist/src/index.js",
     "types": "./dist/src/index.d.ts",
@@ -28,7 +28,9 @@
         "release:major": "standard-version -- --release-as major",
         "release:minor": "standard-version -- --release-as minor",
         "release:patch": "standard-version -- --release-as patch",
-        "release:version": "standard-version -- --release-as"
+        "release:version": "standard-version -- --release-as",
+        "prepare": "husky install",
+        "pre-commit": "lint-staged"
     },
     "lint-staged": {
         "*.{ts,tsx,js,jsx}": [
@@ -37,11 +39,6 @@
         "*.{md,json}": [
             "prettier --write"
         ]
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
     },
     "author": "Cute_Wisp <sweatpotato13@gmail.com>",
     "license": "MIT",
