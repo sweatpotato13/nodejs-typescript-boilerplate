@@ -3,23 +3,23 @@ module.exports = {
     parserOptions: {
         ecmaVersion: 2018,
         project: "tsconfig.json",
-        sourceType: "module"
+        sourceType: "module",
     },
     plugins: ["@typescript-eslint/eslint-plugin", "security", "simple-import-sort"],
     extends: [
-        "plugin:security/recommended",
+        "plugin:security/recommended-legacy",
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
-        "prettier",
+        "prettier"
     ],
     globals: {
         Atomics: "readonly",
-        SharedArrayBuffer: "readonly"
+        SharedArrayBuffer: "readonly",
     },
     root: true,
     env: {
         node: true,
-        jest: true
+        jest: true,
     },
     rules: {
         "@typescript-eslint/interface-name-prefix": "off",
@@ -29,10 +29,11 @@ module.exports = {
         "@typescript-eslint/no-empty-function": "off",
         "simple-import-sort/imports": "error",
         "simple-import-sort/exports": "error",
+        "semi": "error"
     },
     settings: {
         "import/resolver": {
-            node: { extensions: [".js", ".jsx", ".ts", ".tsx"] }
-        }
-    }
+            node: { extensions: [".js", ".jsx", ".ts", ".tsx"] },
+        },
+    },
 };
