@@ -1,66 +1,66 @@
 {
-  "name": "nodejs-typescript-boilerplate",
-  "version": "0.0.1",
-  "description": "nodejs-typescript-boilerplate",
-  "main": "./dist/src/index.js",
-  "types": "./dist/src/index.d.ts",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sweatpotato13/nodejs-typescript-boilerplate.git"
-  },
-  "bugs": {
-    "url": "https://github.com/sweatpotato13/nodejs-typescript-boilerplate/issues"
-  },
-  "homepage": "https://github.com/sweatpotato13/nodejs-typescript-boilerplate",
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "test": "jest",
-    "test:cov": "jest --coverage",
-    "start:dev": "ts-node-dev --poll --respawn --transpile-only src/index.ts --trace-sync-io",
-    "start:prod": "ts-node src/index.ts",
-    "lint": "eslint \"{src,test}/**/*.ts\" --fix",
-    "prettier": "prettier --write --config .prettierrc \"{src,test}/**/*.ts\"",
-    "build": "tsc",
-    "prebuild": "rimraf ./dist",
-    "install": "husky init",
-    "pre-commit": "lint-staged",
-    "prepare": "husky"
-  },
-  "lint-staged": {
-    "*.{ts,tsx,js,jsx}": [
-      "yarn run eslint --fix"
+    "name": "nodejs-typescript-boilerplate",
+    "version": "0.0.1",
+    "description": "nodejs-typescript-boilerplate",
+    "main": "./dist/src/index.js",
+    "types": "./dist/src/index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sweatpotato13/nodejs-typescript-boilerplate.git"
+    },
+    "bugs": {
+        "url": "https://github.com/sweatpotato13/nodejs-typescript-boilerplate/issues"
+    },
+    "homepage": "https://github.com/sweatpotato13/nodejs-typescript-boilerplate",
+    "files": [
+        "dist"
     ],
-    "*.{md,json}": [
-      "prettier --write"
-    ]
-  },
-  "author": "Cute_Wisp <sweatpotato13@gmail.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "@commitlint/cli": "^19.4.0",
-    "@commitlint/config-conventional": "^19.2.2",
-    "@eslint/js": "^9.9.0",
-    "@swc/core": "1.7.12",
-    "@swc/helpers": "^0.5.12",
-    "@types/eslint__js": "^8.42.3",
-    "@types/jest": "29.5.12",
-    "@types/node": "^22.4.1",
-    "eslint": "^9.9.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-security": "^3.0.1",
-    "eslint-plugin-simple-import-sort": "^12.1.1",
-    "husky": "9.1.4",
-    "jest": "29.7.0",
-    "lint-staged": "^15.2.9",
-    "prettier": "^3.3.3",
-    "rimraf": "^6.0.1",
-    "ts-jest": "29.2.4",
-    "ts-node": "^10.9.2",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "5.5.4",
-    "typescript-eslint": "8.1.0"
-  },
-  "packageManager": "yarn@4.2.2"
+    "scripts": {
+        "test": "jest",
+        "test:cov": "jest --coverage",
+        "start:dev": "ts-node-dev --poll --respawn --transpile-only src/index.ts --trace-sync-io",
+        "start:prod": "ts-node src/index.ts",
+        "lint": "eslint \"{src,test}/**/*.ts\" --fix",
+        "prettier": "prettier --write --config .prettierrc \"{src,test}/**/*.ts\"",
+        "build": "tsc",
+        "prebuild": "rimraf ./dist",
+        "install": "husky init",
+        "pre-commit": "lint-staged",
+        "prepare": "husky"
+    },
+    "lint-staged": {
+        "*.{ts,tsx,js,jsx}": [
+            "yarn run eslint --fix"
+        ],
+        "*.{md,json}": [
+            "prettier --write"
+        ]
+    },
+    "author": "Cute_Wisp <sweatpotato13@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "@commitlint/cli": "^19.4.1",
+        "@commitlint/config-conventional": "^19.4.1",
+        "@eslint/js": "^9.9.1",
+        "@swc/core": "1.7.22",
+        "@swc/helpers": "^0.5.12",
+        "@types/eslint__js": "^8.42.3",
+        "@types/jest": "29.5.12",
+        "@types/node": "^22.5.2",
+        "eslint": "^9.9.1",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-security": "^3.0.1",
+        "eslint-plugin-simple-import-sort": "^12.1.1",
+        "husky": "9.1.5",
+        "jest": "29.7.0",
+        "lint-staged": "^15.2.10",
+        "prettier": "^3.3.3",
+        "rimraf": "^6.0.1",
+        "ts-jest": "29.2.5",
+        "ts-node": "^10.9.2",
+        "ts-node-dev": "^2.0.0",
+        "typescript": "5.5.4",
+        "typescript-eslint": "8.3.0"
+    },
+    "packageManager": "yarn@4.2.2"
 }
