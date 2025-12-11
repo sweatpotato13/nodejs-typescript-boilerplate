@@ -38,14 +38,14 @@
     "author": "Cute_Wisp <sweatpotato13@gmail.com>",
     "license": "MIT",
     "devDependencies": {
-        "@commitlint/cli": "^20.1.0",
-        "@commitlint/config-conventional": "^20.0.0",
-        "@eslint/eslintrc": "^3.3.1",
+        "@commitlint/cli": "^20.2.0",
+        "@commitlint/config-conventional": "^20.2.0",
+        "@eslint/eslintrc": "^3.3.3",
         "@eslint/js": "^9.39.1",
         "@swc/core": "1.15.3",
         "@swc/helpers": "^0.5.17",
         "@types/jest": "30.0.0",
-        "@types/node": "^24.10.1",
+        "@types/node": "^25.0.0",
         "eslint": "^9.39.1",
         "eslint-config-prettier": "^10.1.8",
         "eslint-plugin-security": "^3.0.1",
@@ -54,12 +54,12 @@
         "husky": "9.1.7",
         "jest": "30.2.0",
         "lint-staged": "^16.2.7",
-        "prettier": "^3.6.2",
+        "prettier": "^3.7.4",
         "rimraf": "^6.1.2",
-        "ts-jest": "29.4.5",
+        "ts-jest": "29.4.6",
         "ts-node": "^10.9.2",
         "ts-node-dev": "^2.0.0",
         "typescript": "5.9.3",
-        "typescript-eslint": "8.48.0"
+        "typescript-eslint": "8.49.0"
     }
 }
