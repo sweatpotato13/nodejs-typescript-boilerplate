@@ -38,19 +38,19 @@
     "author": "Cute_Wisp <sweatpotato13@gmail.com>",
     "license": "MIT",
     "devDependencies": {
-        "@commitlint/cli": "^20.2.0",
-        "@commitlint/config-conventional": "^20.2.0",
+        "@commitlint/cli": "^20.3.0",
+        "@commitlint/config-conventional": "^20.3.0",
         "@eslint/eslintrc": "^3.3.3",
-        "@eslint/js": "^9.39.1",
-        "@swc/core": "1.15.3",
-        "@swc/helpers": "^0.5.17",
+        "@eslint/js": "^9.39.2",
+        "@swc/core": "1.15.8",
+        "@swc/helpers": "^0.5.18",
         "@types/jest": "30.0.0",
-        "@types/node": "^25.0.0",
-        "eslint": "^9.39.1",
+        "@types/node": "^25.0.3",
+        "eslint": "^9.39.2",
         "eslint-config-prettier": "^10.1.8",
         "eslint-plugin-security": "^3.0.1",
         "eslint-plugin-simple-import-sort": "^12.1.1",
-        "globals": "^16.5.0",
+        "globals": "^17.0.0",
         "husky": "9.1.7",
         "jest": "30.2.0",
         "lint-staged": "^16.2.7",
@@ -60,6 +60,6 @@
         "ts-node": "^10.9.2",
         "ts-node-dev": "^2.0.0",
         "typescript": "5.9.3",
-        "typescript-eslint": "8.49.0"
+        "typescript-eslint": "8.51.0"
     }
 }
