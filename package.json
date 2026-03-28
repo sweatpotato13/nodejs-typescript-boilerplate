@@ -43,7 +43,7 @@
         "@eslint/eslintrc": "^3.3.5",
         "@eslint/js": "^9.39.4",
         "@swc/core": "1.15.8",
-        "@swc/helpers": "^0.5.19",
+        "@swc/helpers": "^0.5.20",
         "@types/jest": "30.0.0",
         "@types/node": "^25.5.0",
         "eslint": "^9.39.4",
