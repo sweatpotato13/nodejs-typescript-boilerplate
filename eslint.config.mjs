@@ -21,6 +21,7 @@ export default eslintTs.config(
     ...compat.extends(
         "prettier"
     ),
+    pluginSecurity.configs.recommended,
     {
         ignores: ["**/types.d.ts", "**/*.js", "**/node_modules/"]
     },
@@ -47,7 +48,6 @@ export default eslintTs.config(
         plugins: {
             "@typescript-eslint": tseslint.plugin,
             "simple-import-sort": simpleImportSortPlugin,
-            security: pluginSecurity.configs.recommended,
         },
         rules: {
             "no-empty-pattern": "off",
