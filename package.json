@@ -21,6 +21,7 @@
         "start:dev": "ts-node-dev --poll --respawn --transpile-only src/index.ts --trace-sync-io",
         "start:prod": "ts-node src/index.ts",
         "lint": "eslint \"{src,test}/**/*.ts\" --fix",
+        "lint:ci": "eslint \"{src,test}/**/*.ts\"",
         "prettier": "prettier --write --config .prettierrc \"{src,test}/**/*.ts\"",
         "build": "tsc",
         "prebuild": "rimraf ./dist",

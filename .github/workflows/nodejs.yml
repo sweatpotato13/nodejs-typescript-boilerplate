@@ -38,10 +38,10 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: pnpm
-      - name: pnpm lint
+      - name: pnpm lint:ci
         run: |
           pnpm install --frozen-lockfile
-          pnpm lint
+          pnpm lint:ci
   test:
     runs-on: ubuntu-latest
     strategy:
