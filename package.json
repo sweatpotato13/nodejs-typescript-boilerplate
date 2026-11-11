@@ -13,7 +13,7 @@
     },
     "homepage": "https://github.com/sweatpotato13/nodejs-typescript-boilerplate",
     "files": [
-        "dist"
+        "dist/src"
     ],
     "scripts": {
         "test": "jest",
