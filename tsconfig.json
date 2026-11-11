@@ -15,6 +15,7 @@
         "outDir": "./dist",
         "incremental": true,
         "resolveJsonModule": true,
+        "types": ["node", "jest"],
         "paths": {
             "@src/*": ["./src/*"],
             "@services": ["./src/Services/*"],
